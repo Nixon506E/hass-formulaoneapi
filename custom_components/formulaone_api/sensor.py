@@ -208,7 +208,9 @@ class FormulaOneSensor(Entity):
             'next_race': next_race,
             'races': races['MRData']['RaceTable']['Races'],
             'drivers': drivers['MRData']['StandingsTable']['StandingsLists'][0]['DriverStandings'],
-            'constructors': constructors['MRData']['StandingsTable']['StandingsLists'][0]['ConstructorStandings']
+            'constructors': constructors['MRData']['StandingsTable']['StandingsLists'][0]['ConstructorStandings'],
+            'qualifying': qualifying['MRData']['RaceTable']['Race']['QualifyingList'],
+            'results': results['MRData']['RaceTable']['Race']['ResultsList']
         }
 
         return all_attr
